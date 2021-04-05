@@ -8,13 +8,38 @@
 
         {{#if @site.description}}
             <div class="cover-description">{{@site.description}}</div>
+            <br />
         {{/if}}
 
-        {{#unless @member}}
+        <script>window.twttr = (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function(f) {
+                t._e.push(f);
+            };
+
+            return t;
+            }(document, "script", "twitter-wjs"));
+        </script>
+
+        <a class="twitter-follow-button"
+            href="https://twitter.com/LouisRouffineau"
+            data-size="large">
+            Follow @LouisRouffineau
+        </a>
+
+        <!--{{#unless @member}}
             <div class="cover-cta">
                 <button class="button members-subscribe" data-portal="signup">Subscribe now</button>
                 <button class="button button-secondary members-login" data-portal="signin">Login</button>
             </div>
-        {{/unless}}
+        {{/unless}}-->
     </div>
 </div>
