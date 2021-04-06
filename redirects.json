@@ -1,0 +1,27 @@
+[
+  {
+    "from": "/en/" ,
+    "to":  "/",
+    "permanent": true
+  },
+  {
+    "from": "/en/legal" ,
+    "to":  "/privacy",
+    "permanent": true
+  },
+  {
+    "from": "/fr/mentions-legales" ,
+    "to":  "/privacy",
+    "permanent": true
+  },
+  {
+    "from": "/en/about" ,
+    "to":  "/about",
+    "permanent": true
+  },
+  {
+    "from": "/fr/a-propos" ,
+    "to":  "/about",
+    "permanent": true
+  }
+]
